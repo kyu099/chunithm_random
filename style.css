@@ -1,0 +1,20 @@
+html {
+    height: 100%; 
+    text-align: center;
+}
+
+body {
+    height: 100%; 
+    text-align: center;
+}
+
+table{
+    margin: auto;
+    width: 300px
+}
+th{
+    text-align: right;
+}
+td{
+    text-align: right;
+}
