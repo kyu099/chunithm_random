@@ -157,4 +157,8 @@ document.getElementById("test").onclick = async () => {
   } else {
     out1.innerHTML += "<br>";
   }
+
+  if(result == null){
+    out1.innerHTML = "条件に該当する楽曲がありません。";
+  }
 }
