@@ -9,8 +9,37 @@
     </head>
     <body>
         <h2>CHUNITHMランダム選曲</h2>
-        曲数
-        <input type="number" id="input">
+        目標・難易度・ジャンルで絞り込んで、その中からランダム選曲を行うツールです。
+        <br>
+        <br>
+        chunirecユーザーネームを入力
+        <input type="text" id="username">
+        <br>
+        <br>
+        <b>目標設定</b>（設定しない場合、全曲から抽選）
+        <br>
+        <input type="radio" id="ajc" name="target">
+        <label for="ajc">AJC</label>
+        <input type="radio" id="aj" name="target">
+        <label for="aj">AJ</label>
+        <input type="radio" id="fc" name="target">
+        <label for="fc">FC</label>
+        <br>
+        <input type="radio" id="1009000" name="target">
+        <label for="1009000">SSS+</label>
+        <input type="radio" id="1007500" name="target">
+        <label for="1007500">SSS</label>
+        <input type="radio" id="1005000" name="target">
+        <label for="1005000">SS+</label>
+        <input type="radio" id="1000000" name="target">
+        <label for="1000000">SS</label>
+        <br>
+        <input type="radio" id="custom" name="target">
+        <label for="custom">目標点数を入力</label>
+        <input type="text" id="target_score">
+        <br>
+        <br>
+        <b>絞り込み設定</b>（設定しない場合、全曲から抽選）
         <br>
         <input type="checkbox" id="10" name="level">
         <label for="10">10</label>
@@ -50,11 +79,12 @@
         <input type="checkbox" id="ORIGINAL" name="genre">
         <label for="ORIGINAL">ORIGINAL</label>
         <br>
-        <button id="test">押せ！</button>
+        <br>
+        <button id="test">抽選</button>
         <br>
         <br>
         <output id="out1"></output>
         <br>
-        © 2023 股濡れ徒歩部
+        © 2024 股濡れ徒歩部
     </body>
 </html>
